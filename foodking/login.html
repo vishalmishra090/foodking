@@ -1,0 +1,119 @@
+<html>
+
+<head>
+  <title>log in </title>
+  <style type="text/css">
+    body {
+      background-color: #fec979;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    @font-face {
+      font-family: 'Courgette-Regular';
+      src: url('../fonts/Courgette-Regular.ttf');
+    }
+
+    #home a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #home a:hover {
+      color: blue;
+    }
+
+    a.on {
+      color: red;
+      font-family: Courgette-Regular, cursive;
+      text-shadow: 2px 2px 5px black;
+      font-size: 100px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    #login {
+      margin: 0px auto 0px auto;
+      width: 500px;
+
+      color: gray;
+      background-color: #efefef;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    input {
+      width: 250px;
+      color: gray;
+      font-size: 120%;
+      margin: 10px 10px 20px 10px;
+      padding: 5px;
+      background-color: #efefef;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px dotted black;
+
+    }
+
+    div {
+      word-spacing: 0.5em;
+      font-size: 120%;
+    }
+
+    input:focus {
+      border: 1px dotted black;
+      border-radius: 10px;
+      outline: none;
+      background-color: white;
+    }
+
+    input[type="submit"] {
+      width: 100px;
+
+      color: gray;
+      border: 1px solid black;
+      box-shadow: 0px 1px 3px black;
+      border-radius: 4px;
+      font-size: 100%;
+
+      margin-top: 20px;
+      margin-left: 250px;
+    }
+
+    input[type="submit"]:hover {
+      cursor: pointer;
+      color: white;
+      background-color: black;
+      box-shadow: none;
+    }
+
+
+    #copyright {
+      margin-top: 150px;
+      font-size: 80%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="on"><a href=../index.html class="on">food king</a></h1>
+  <p id="home"><a href=../index.html>HOME </a> </p> <div id="login">
+      <form action="www.example.com/login.php" method="post">
+        <div><label>USERNAME:</label>
+          <input type="text" name="username" maxlength="20" required="required" /> </div>
+        <div><label>PASSWORD:</label>
+          <input type="password" name="password" maxlength="10" required="required" /></div>
+        <input type="submit" value="Log in" />
+      </form>
+      </div>
+
+      <br />
+      <center>
+        <p id="copyright">Copyright &copy; 2017 Food king. All rights reserved.</p>
+      </center>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<html>
+
+<head>
+  <title>sing up</title>
+  <style type="text/css">
+    body {
+      background-color: #fec979;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #home a {
+      color: red;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    #home a:hover {
+      color: blue;
+    }
+
+    @font-face {
+      font-family: 'Courgette-Regular';
+      src: url('../fonts/Courgette-Regular.ttf');
+    }
+
+    a.foodking {
+      color: red;
+      font-family: Courgette-Regular, cursive;
+      font-size: 100px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px black;
+      text-decoration: none;
+    }
+
+    .fieldset1,
+    .fieldset2 {
+      color: red;
+      width: 700px;
+      border: 1px solid red;
+      background: #efefef;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: left;
+      margin: 0px auto 20px auto;
+    }
+
+    legend {
+      width: 150px;
+      padding: 10px 20px;
+      font-weight: bold;
+
+      background-color: red;
+      border-radius: 10px;
+
+      margin-left: 20px;
+      color: white;
+    }
+
+
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    select {
+      width: 200px;
+      color: red;
+      padding: 5px;
+      background-color: #efefef;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px dotted red;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    select:focus {
+      background-color: white;
+      color: black;
+      outline: none;
+      border: 1px dotted red;
+      border-radius: 5px;
+    }
+
+    input[type="file"] {
+      padding: 5px;
+      color: red;
+      width: 250px;
+    }
+
+    input[type="date"] {
+      padding: 5px;
+      color: red;
+      background-color: #efefef;
+      border: none;
+    }
+
+    input[type="date"]:focus {
+      background-color: white;
+      color: black;
+      outline: none;
+      border: 1px dotted red;
+      border-radius: 5px;
+    }
+
+    .details {
+      width: 110px;
+      float: left;
+      text-align: right;
+      padding: 5px;
+      padding-right: 10px;
+    }
+
+    .f div {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .ticbox {
+      margin: 20px;
+    }
+
+    .singup input {
+      width: 100px;
+      padding: 5px;
+      border: 1px solid black;
+      font-size: 110%;
+      border-radius: 5px;
+      background-color: red;
+      color: white;
+      box-shadow: 0px 2px 3px black;
+      text-shadow: 2px 2px 3px black;
+    }
+
+    .singup input:hover {
+      cursor: pointer;
+      box-shadow: none;
+      background-color: black;
+      text-shadow: none;
+    }
+
+    #copy {
+      font-size: 80%;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="foodking"><a href="../index.html" class="foodking">food king</a></h1>
+  <p id="home"><a href=../index.html>HOME </a> </p> <form action="www.example.com/profile.php" method="post">
+      <div>
+        <fieldset class="fieldset1">
+          <legend>Your Details</legend>
+          <div class="f">
+            <div> <label for="username" class="details">Username:</label>
+              <input type="text" name="username" id="username" maxlength="10" required="required" /></div>
+            <div><label for="password" class="details">Password:</label>
+              <input type="password" name="password" id="password" maxlength="10" required="required" /></div>
+
+          </div>
+          <div class="f">
+            <div> <label for="name" class="details">Name:</label>
+              <input type="text" name="name" id="name" maxlength="30" required="required" /></div>
+
+            <div> <label for="dob" class="details">Birthday:</label>
+              <input type="date" name="dob" id="dob" required="required" /></div>
+          </div>
+          <div class="f">
+            <div><label for="image" class="details">Your Image:</label>
+              <input type="file" name="image" id="image" /></div>
+
+          </div>
+          <div class="ticbox">
+            <p>Which type food you interested:
+              <input type="radio" name="foodinterested" value="veg" id="veg" />
+              <label for="veg">Vegetarian</label>
+              <input type="radio" name="foodinterested" value="nonveg" id="nonveg" />
+              <label for="nonveg">Non-vegetarian</label>
+              <input type="radio" name="foodinterested" value="both" id="both" checked="checked" />
+              <label for="both">Both</label></p>
+          </div>
+          <div class="ticbox">
+            <p>Which style to make your food:
+              <input type="checkbox" name="makinstyle" value="indian" id="indian" checked="checked" />
+              <label for="indian">Indian</label>
+              <input type="checkbox" name="makingstyle" value="american" id="american" />
+              <label for="american">American</lable>
+                <input type="checkbox" name="makingstyle" value="chinese" id="chinese" />
+                <label for="chinese">Chinese</lable>
+                  <input type="checkbox" name="makingstyle" value="italian" id="italian" />
+                  <label for="italian">Italian</label></p>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset2">
+          <legend>Contect details</legend>
+          <div class="f">
+            <div><label for="addr1" class="details">Address line 1:</label>
+              <input type="text" name="addr1" id="addr1" maxlength="50" required="required" /></div>
+            <div><label for="addr2" class="details">Address line 2:</label>
+              <input type="text" name="addr2" id="addr2" maxlength="50" /> </div>
+          </div>
+          <div class="f">
+            <div> <label for="city" class="details">City:</label>
+              <input type="text" name="city" id="city" maxlength="30" required="required" /></div>
+            <div> <label for="dist" class="details ">District:</label>
+              <input type="text" name="dist" id="dist" maxlength="30" required="required" /></div>
+          </div>
+          <div class="f">
+            <div><label for="state" class="details">State:</label>
+              <input type="text" name="state" id="state" maxlength="30" required="required" /></div>
+            <div> <label for="pincode" class="details">Pincode:</label>
+              <input type="text" name="pincode" id="pincode" maxlength="7" required="required" /></div>
+          </div>
+          <div class="f">
+            <div> <label for="country" class="details">Country:</label>
+              <select name="country" id="country">
+                <option value="america">America</option>
+                <option value="afghanistan">Afghanistan</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="brazil">Brazil</option>
+                <option value="china">China</option>
+                <option value="colombia">Colombia</option>
+                <option value="denmark">Denmark</option>
+                <option value="dominica">Dominica</option>
+                <option value="egypt">Egypt</option>
+                <option value="ethiopia">Ethiopia</option>
+                <option value="finland">Finland</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="hongkong">Hong kong</option>
+                <option value="india" selected="selected">India</option>
+                <option value="japan">Japan</option>
+              </select></div>
+            <div><label for="mob" class="details">Mobile:</label>
+              <input type="text" name="mob" id="mob" maxlength="10" required="required" /></div>
+          </div>
+          <div class="f">
+            <div> <label for="teph" class="details">Telephone:</label>
+              <input type="text" name="teph" id="teph" maxlength="12" /></div>
+            <div> <label for="email" class="details">Email:</label>
+              <input type="email" name="email" id="email" maxlength="50" /></div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="singup"> <input type="submit" value="Sing Up" /></div>
+      </form>
+
+
+      <p id="copy">Copyright &copy; 2017 Food king. All rights reserved.</p>
+</body>
+
+</html>
